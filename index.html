@@ -8,15 +8,15 @@
     </div>
     <div>
       <button id="myButton">Send my greetings</button>
-
-      <script>
-        $(document).ready(function(){
-            document.getElementById("myButton").click();
-        });
-      </script>
-      
     </div>
   </form>
+
+  <script>
+    function submitform(){
+    document.getElementById("myButton").click();
+    document.getElementById("myButton").submit();
+    };
+  </script>
 
 </body>
 </html>
